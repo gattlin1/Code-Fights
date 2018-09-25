@@ -1,10 +1,10 @@
 function makeArrayConsecutive2(statues) {
     maxNum = minNum = statues[0];
-    for (i = 1; i < statues.length; i++){
-        if (statues[i] > maxNum){
+    for (i = 1; i < statues.length; i++) {
+        if (statues[i] > maxNum) {
             maxNum = statues[i]
         } 
-        if(statues[i] < minNum){
+        if (statues[i] < minNum) {
             minNum = statues[i]
         }
     }
