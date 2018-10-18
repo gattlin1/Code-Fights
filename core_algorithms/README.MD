@@ -1,0 +1,1 @@
+Algorithms from the 'Core' category from Code Signal.
