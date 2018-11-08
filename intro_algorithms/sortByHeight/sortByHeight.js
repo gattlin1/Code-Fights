@@ -5,16 +5,12 @@ function sortByHeight(a) {
             nonTreeValues.push(a[i]);//pulls out the non tree values into a new array.
         }
     }
-    
     insertionSort(nonTreeValues);//array is now sorted.
-    
     for (i = 0; i < a.length; i++) {
         if (a[i] != -1) {
             a[i] = nonTreeValues.pop();//pops off the last value which is the smallest non tree value
-            
         }
     }
-    
     return a;
 }
 
@@ -23,7 +19,6 @@ function sortByHeight(a) {
 function insertionSort(a) {
     for (j = 1; j < a.length; j++) {
         key = a[j];
-        
         i = j - 1;
         
         while (i >= 0 && a[i] < key) {
