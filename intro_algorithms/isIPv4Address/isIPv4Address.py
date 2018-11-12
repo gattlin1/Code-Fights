@@ -6,7 +6,7 @@ def isIPv4Address(inputString):
         for values in ip_nums:
             if values == '' or not values.isdigit():
                 return False
-            elif int(values) > 255 or int(values) < 0:
+            elif int(values) > 255 and int(values) < 0:
                 return False
         return True
     
